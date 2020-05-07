@@ -1,8 +1,10 @@
 ﻿@model ComicBookGallery.Models.ComicBook
+
 @{
     ViewBag.Title = Model.DisplayText;
+    ViewBag.ShowBackBar = true;
 }
-    <h2>@Model.DisplayText</h2>
+<h2>@Model.DisplayText</h2>
 
 <div class="row">
     <div class="col-md-6">
@@ -28,7 +30,7 @@
     </div>
     <div class="col-md-6">
         <img src="/Images/@Model.CoverImageFileName"
-                alt="@Model.DisplayText" class="img-responsive" />
+             alt="@Model.DisplayText" class="img-responsive" />
     </div>
 </div>
 
